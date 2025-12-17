@@ -1,0 +1,379 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* 1. Установите семейство шрифта */
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eaeaea;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #3498db;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* 1. Семейство шрифтов */
+.font-family-section {
+    border-left-color: #1abc9c;
+}
+
+.font-example {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.font-fallback {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-style: italic;
+}
+
+/* 2. Курсивное и наклонное начертание */
+.font-style-section {
+    border-left-color: #e74c3c;
+}
+
+.italic-text {
+    /* Курсивное начертание */
+    font-style: italic;
+}
+
+.oblique-text {
+    /* Наклонное начертание */
+    font-style: oblique;
+}
+
+.normal-text {
+    /* Обычное начертание */
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* 3. Вариант малых заглавных букв */
+.small-caps-section {
+    border-left-color: #9b59b6;
+}
+
+.small-caps {
+    /* Малые заглавные буквы */
+    font-variant: small-caps;
+    font-size: 18px;
+}
+
+/* 4. Жирность текста */
+.font-weight-section {
+    border-left-color: #f39c12;
+}
+
+.light-text {
+    font-weight: 300;
+}
+
+.normal-weight {
+    font-weight: 400;
+}
+
+.bold-text {
+    /* Жирный текст */
+    font-weight: 700;
+}
+
+.bolder-text {
+    font-weight: 900;
+}
+
+/* 5. Размер шрифта */
+.font-size-section {
+    border-left-color: #16a085;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.medium-text {
+    font-size: 18px;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.xlarge-text {
+    font-size: 32px;
+}
+
+/* 6. Изменение внешнего вида при наведении */
+.hover-effect-section {
+    border-left-color: #d35400;
+}
+
+.hover-text {
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Эффект при наведении */
+.hover-text:hover {
+    background-color: #3498db;
+    color: white;
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.hover-box {
+    padding: 20px;
+    background-color: #f1c40f;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.hover-box:hover {
+    background-color: #e74c3c;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.hover-box p:hover {
+    text-decoration: underline;
+}
+
+/* 7. Подчёркивание текста */
+.text-decoration-section {
+    border-left-color: #c0392b;
+}
+
+.underline-text {
+    /* Подчёркивание текста */
+    text-decoration: underline;
+}
+
+.overline-text {
+    text-decoration: overline;
+}
+
+.line-through-text {
+    text-decoration: line-through;
+}
+
+.multiple-decoration {
+    text-decoration: underline overline line-through;
+    text-decoration-color: #e74c3c;
+    text-decoration-thickness: 2px;
+}
+
+/* 8. Ссылка без подчёркивания */
+.link-section {
+    border-left-color: #2980b9;
+}
+
+a {
+    color: #3498db;
+    transition: color 0.3s;
+}
+
+.regular-link {
+    /* Обычная ссылка с подчёркиванием (значение по умолчанию) */
+    text-decoration: underline;
+}
+
+/* Убираем подчёркивание у ссылки */
+.no-underline-link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.no-underline-link:hover {
+    color: #e74c3c;
+}
+
+.hover-underline-link {
+    text-decoration: none;
+    border-bottom: 2px dotted #3498db;
+}
+
+.hover-underline-link:hover {
+    text-decoration: underline;
+    border-bottom: none;
+}
+
+/* 9. Выравнивание текста по центру */
+.text-align-section {
+    border-left-color: #8e44ad;
+}
+
+.align-left {
+    text-align: left;
+}
+
+/* Выравнивание текста по центру */
+.align-center {
+    text-align: center;
+    font-weight: bold;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+/* 10. Отступ первой строки в абзаце */
+.text-indent-section {
+    border-left-color: #27ae60;
+}
+
+/* Отступ первой строки */
+.indented-text {
+    text-indent: 40px;
+}
+
+.negative-indent {
+    text-indent: -20px;
+    margin-left: 20px;
+    padding-left: 10px;
+    background-color: #f1f1f1;
+}
+
+.no-indent {
+    text-indent: 0;
+}
+
+/* 11. Преобразование регистра текста */
+.text-transform-section {
+    border-left-color: #e67e22;
+}
+
+/* Преобразование регистра: capitalize */
+.capitalize-text {
+    text-transform: capitalize;
+}
+
+/* Преобразование регистра: uppercase */
+.uppercase-text {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Преобразование регистра: lowercase */
+.lowercase-text {
+    text-transform: lowercase;
+}
+
+.normal-case-text {
+    text-transform: none;
+}
+
+/* Комбинированный пример */
+.combined-section {
+    border-left-color: #2c3e50;
+}
+
+.combined-style {
+    /* Комбинируем несколько свойств */
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+    text-indent: 0; /* Для центрированного текста отступ не нужен */
+    text-transform: uppercase;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.combined-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.combined-link:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Футер */
+.footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 2px solid #eaeaea;
+    text-align: center;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    section {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+}
